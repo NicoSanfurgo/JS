@@ -1,0 +1,12 @@
+let stockProductos = [
+    {id: 1, nombre: "Guitarra criolla", tipo:"Guitarra", cantidad: 1, desc: "Esta guitarra es Ideal para comenzar en el mundo de la música, la guitarra es de Fabricación Nacional, de nivel básico, terminación rústica, detalles estéticos con algunas imperfecciones propias de los instrumentos de Gama Baja", precio: 16.999, img: 'Img/criolla.webp'},
+    {id: 2, nombre: "Guitarra Electrica", tipo:"Guitarra", cantidad: 1, desc: "Esta guitarra electrica es ideal para comenzar a explorar tu lado rockero o comenzar a navegar por tu creatividad", precio: 37.338, img: 'Img/electrica.webp'},
+    {id: 3, nombre: "Guitarra Electroacustica", tipo:"Guitarra", cantidad: 1, desc: "Esta guitarra electroacustica es ideal para comenzar a explorar tu lado rockero o comenzar a navegar por tu creatividad", precio: 21.999, img: 'Img/electroacustica.jpg'},
+
+    {id: 4, nombre: "Teclado Piano Yamaha 5/8", tipo:"Teclado", cantidad: 1, desc: "El Piaggero NP12 cuenta con 61 teclas de tamaño completo sensibles al tacto, estilo piano y el clásico tono de piano Yamaha con un diseño ultraportátil y liviano.", precio: 58.999, img: 'Img/NP12B.jpg'},
+    {id: 5, nombre: "Teclado Casio SA46 Mini", tipo:"Teclado", cantidad: 1, desc: "El mini teclado Casio de 32 teclas ofrece la cantidad de variaciones para ampliar tu creatividad en donde quieras", precio: 46.789, img: 'Img/MINI.jpg'},
+    {id: 6, nombre: "Teclado Yamaha PSSE30", tipo:"Teclado", cantidad: 1, desc: "La serie PSS con 37 mini teclas es adecuada para los músicos más jóvenes y principiantes que recién están explorando los secretos del mundo de la música, pero su versatilidad también será apreciada por los productores que viajan mucho y necesitan tener siempre un instrumento que emita sonidos a mano.", precio: 34.659, img:'Img/PSSE30.jpg'},
+    
+    {id: 7, nombre: "Armonica Hohner Blues Band", tipo:"Viento", cantidad: 1, desc: "Sonido brillante y con cuerpo, ¡ideal para tocar Blues, Folk y Rock!", precio: 1.989, img: 'Img/armonicaHohner.jpg'},
+    {id: 8, nombre: "Flauta Dulce Yamaha Yrs23 Soprano", tipo:"Viento", cantidad: 1, desc: "Flauta Soprano ideal para el colegio y comenzar con instrumentos de vientos", precio: 2.388, img: 'Img/flautaDulce.webp'},
+]
