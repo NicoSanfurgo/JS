@@ -15,6 +15,6 @@ contenedorModal.addEventListener('click', (event) =>{
     contenedorModal.classList.toggle('modal-active')
 
 })
-modalCarrito.addEventListener('click', (event) => {
+modalCarrito.addEventListener('click', (event) =>{
     event.stopPropagation()
 })

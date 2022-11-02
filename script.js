@@ -12,6 +12,8 @@ const precioTotal = document.getElementById('precioTotal')
 
 let carrito = []
 
+
+
 //Agregando JSON
 document.addEventListener('DOMContentLoaded', () => {
     if (localStorage.getItem('carrito')){
@@ -50,7 +52,6 @@ stockProductos.forEach((producto) => {
 
 //Agregar al carrito
 const agregarAlCarrito = (prodId) => {
-
     const existe = carrito.some (prod => prod.id === prodId)
 
     if (existe){
@@ -76,9 +77,11 @@ const eliminarDelCarrito = (prodId) => {
 }
 
 
+
 //Carrito
 const actualizarCarrito = () => {
     contenedorCarrito.innerHTML = ""
+    
 
     carrito.forEach((prod) => {
         const div = document.createElement('div')
@@ -90,9 +93,10 @@ const actualizarCarrito = () => {
         <button onclick="eliminarDelCarrito(${prod.id})" class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
         `
         contenedorCarrito.appendChild(div)
-
-        localStorage.setItem('carrito', JSON.stringify(carrito))
     })
+    
+    localStorage.setItem('carrito', JSON.stringify(carrito))
+
     contadorCarrito.innerText = carrito.length
     precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
 }
