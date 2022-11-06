@@ -26,6 +26,24 @@ document.addEventListener('DOMContentLoaded', () => {
 botonVaciar.addEventListener('click', () => {
     carrito.length = 0
     actualizarCarrito()
+
+    let timerInterval
+    Swal.fire({
+  title: 'Eliminando productos',
+  html: 'Eliminados en <b></b> seg.',
+  timer: 2000,
+  timerProgressBar: true,
+  didOpen: () => {
+    Swal.showLoading()
+    const b = Swal.getHtmlContainer().querySelector('b')
+    timerInterval = setInterval(() => {
+      b.textContent = Swal.getTimerLeft()
+    }, 100)
+  },
+  willClose: () => {
+    clearInterval(timerInterval)
+  }
+    })
 })
 
 
@@ -74,6 +92,14 @@ const eliminarDelCarrito = (prodId) => {
     const indice = carrito.indexOf(item)
     carrito.splice(indice, 1)
     actualizarCarrito()
+    swal.fire({
+        title: "Producto eliminado",
+        icon: "success",
+        timer: 1000,
+        timerProgressBar: true,
+    })
+
+
 }
 
 
@@ -100,3 +126,4 @@ const actualizarCarrito = () => {
     contadorCarrito.innerText = carrito.length
     precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
 }
+
