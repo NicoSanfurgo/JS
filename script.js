@@ -49,25 +49,6 @@ botonVaciar.addEventListener('click', () => {
 
 //Agregar los productos importados del "stock.js"
 
-/* stockProductos.forEach((producto) => {
-    const div = document.createElement('div')
-    div.classList.add('producto')
-    div.innerHTML = `
-    <img src=${producto.img} alt= "">
-    <h3>${producto.nombre}</h3>
-    <p>${producto.desc}</p>
-    <p class="precioProducto">Precio:$ ${producto.precio}</P>
-    <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
-    `
-    contenedorProductos.appendChild(div)
-
-    const boton = document.getElementById(`agregar${producto.id}`)
-
-    boton.addEventListener('click', () => {
-        agregarAlCarrito(producto.id)
-    })
-}) */
-
 stockProductos.forEach((producto) => {
     const div = document.createElement('div')
     div.classList.add('producto')
