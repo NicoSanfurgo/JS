@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-color:white;
+    background-color:antiquewhite;
 }
 img {
     width: 100%;
@@ -161,4 +161,42 @@ p {
 }
 .boton-eliminar:focus {
     outline: none;
+}
+
+
+#comentarios{
+    font-style: italic;
+    background-color: brown;
+}
+
+/* Soporte */
+#body{
+    background: #EC6F66;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F3A183, #EC6F66);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F3A183, #EC6F66); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.relleno{
+    background: #FC354C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0ABFBC, #FC354C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 35px #000;
+}
+.boton{
+    width: 50%;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 100px;
+    border-radius: 20px;
+    border:none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.boxing{box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
 }

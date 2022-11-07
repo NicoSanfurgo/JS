@@ -1,0 +1,32 @@
+[
+    {
+        "nombre": "Victoria",
+        "comentario": "Muy buena página, recomendadisima!",
+        "id": 25,
+        "bool": true
+    },
+    {
+        "nombre": "Nicolás",
+        "comentario":"Gracias a esta pág. pude conseguir el instrumento que buscaba",
+        "id": 25,
+        "bool": true
+    },
+    {
+        "nombre": "Priscila",
+        "comentario":"Todo de buena calidad y de confianza 10/10",
+        "id": 25,
+        "bool": true
+    },
+    {
+        "nombre": "Kevin",
+        "comentario":"Me arriesgue a comprar en la página a pesar de no estar completa y no me estafaron",
+        "id": 25,
+        "bool": true
+    },
+    {
+        "nombre": "Bruno",
+        "comentario":"Las guitarras son lo mejor!!",
+        "id": 25,
+        "bool": true
+    }
+]

@@ -1,0 +1,27 @@
+/* Soporte */
+#body{
+    background-color: blue;
+}
+.contactInfo{
+    background: rgb(6,82,32);
+    background: linear-gradient(305deg, rgba(6,82,32,0.5802696078431373) 0%, rgba(7,68,41,0.6755077030812324) 50%, rgba(5,71,43,0.5858718487394958) 100%);
+}
+.relleno{
+    background-image: linear-gradient( 109.6deg,  rgba(0,0,0,1) 11.2%, rgba(11,132,145,1) 91.1% );
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 35px #000;
+}
+.boton{
+    width: 50%;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 100px;
+    border-radius: 20px;
+    border:none;
+    text-transform: uppercase;
+    font-size: 15px;
+}

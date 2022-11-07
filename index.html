@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AG Variety</title>
+    <title>NS Variety</title>
     <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
   </header>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg bg-light">
+  <nav class="navbar navbar-expand-lg bg-secundary">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">NS Variety</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,19 +27,19 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Merch</a>
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
-          <a class="nav-link disabled">Disabled</a>
+          <a class="nav-link active" aria-current="page" href="/pages/soporte.html">Soporte</a>
         </div>
       </div>
     </div>
   </nav>
 
+
   <main id="contenedor-productos"></main>
     <div class="modal-contenedor">
       <div class="modal-carrito">
+
           <h3>Carrito</h3>
+
           <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
           <div id="carrito-contenedor"></div>
           <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
@@ -47,10 +47,16 @@
       </div>
   </div>
 
+  <h2>Comentarios de la gente</h2>
+
+  <ul id="comentarios"></ul>
+
+
 
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top bg-dark">
     <p class="col-md-4 mb-0 text-muted">© dedicated for coderhouse project</p>
   </footer>
+
 
 
   <!-- Libreria Sweet Alert -->

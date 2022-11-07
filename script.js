@@ -48,6 +48,26 @@ botonVaciar.addEventListener('click', () => {
 
 
 //Agregar los productos importados del "stock.js"
+
+/* stockProductos.forEach((producto) => {
+    const div = document.createElement('div')
+    div.classList.add('producto')
+    div.innerHTML = `
+    <img src=${producto.img} alt= "">
+    <h3>${producto.nombre}</h3>
+    <p>${producto.desc}</p>
+    <p class="precioProducto">Precio:$ ${producto.precio}</P>
+    <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
+    `
+    contenedorProductos.appendChild(div)
+
+    const boton = document.getElementById(`agregar${producto.id}`)
+
+    boton.addEventListener('click', () => {
+        agregarAlCarrito(producto.id)
+    })
+}) */
+
 stockProductos.forEach((producto) => {
     const div = document.createElement('div')
     div.classList.add('producto')
@@ -66,6 +86,8 @@ stockProductos.forEach((producto) => {
         agregarAlCarrito(producto.id)
     })
 })
+
+
 
 
 //Agregar al carrito
@@ -127,3 +149,22 @@ const actualizarCarrito = () => {
     precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
 }
 
+fetch('comentarios.json')
+.then((response) => response.json())
+.then((info) => render(info))
+
+let comentarios = document.getElementById("comentarios")
+
+function render(lista) {
+    comentarios.innerHTML = ""
+
+    for(const prod of lista){
+        let card = document.createElement("div")
+
+        card.className = "card"
+
+        card.innerHTML = `<h2 class="titulo">${prod.nombre}</h2> <p class="comentario">${prod.comentario}</p>`
+
+        comentarios.append(card)
+    }
+}
